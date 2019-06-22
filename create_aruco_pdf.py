@@ -27,7 +27,7 @@ if __name__ == '__main__':
     for i in range(0,tag_num,2):
         c.drawImage("generated_tags/test_marker"+str(i)+".jpg", 1*cm, (i%2)*tag_size*cm+1*cm,\
                     tag_size*cm, tag_size*cm)
-        c.drawImage("generated_tags/test_marker"+str(i)+".jpg", 1*cm, (i%2+1)*tag_size*cm+1.5*cm,\
+        c.drawImage("generated_tags/test_marker"+str(i+1)+".jpg", 1*cm, (i%2+1)*tag_size*cm+1.5*cm,\
                     tag_size*cm, tag_size*cm)
         c.showPage()
     c.save()
